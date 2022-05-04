@@ -1,30 +1,34 @@
 import React from 'react';
 import logo from './logo.svg';
-import styles from './App.css';
+import styles from './App.css'
 
 import Card from './components/cards.jsx';
 
 const cards = [
   {
     name:"Безлимитный 300",
-    price:"300",
-    speed:"10мБит/c"
+    price:"300/мес",
+    speed:"до 10 мБит/cек",
+    text:"Объем включенного трафика не ограничен"
   },
   {
     name:"Безлимитный 450",
-    price:"450",
-    speed:"10мБит/c"
+    price:"450/мес",
+    speed:"до 50 мБит/cек",
+    text:"Объем включенного трафика не ограничен"
   },
   {
     name:"Безлимитный 550",
-    price:"550",
-    speed:"10мБит/c",
+    price:"550/мес",
+    speed:"до 100 мБит/cек",
+    text:"Объем включенного трафика не ограничен",
     isSelected: true
   },
   {
     name:"Безлимитный 1000",
-    price:"1000",
-    speed:"10мБит/c"
+    price:"1000/мес",
+    speed:"до 200 мБит/cек",
+    text:"Объем включенного трафика не ограничен"
   }
 ]
 
@@ -32,17 +36,14 @@ function App (){
   
   return (
     <div>
-    <div className={this.props.theme.App}>
+    <div className={App}>
     {
       cards.map((card) =>
-      <Card name={card.name} price={card.price} speed={card.speed} 
+      <Card name={card.name} price={card.price} speed={card.speed} text={card.text}
       isSelected={card.isSelected}></Card>
       )
   }
 </div>
-    <div className="App-button-container">
-      <button >Try now</button>
-    </div>
     </div>
   );
 }
