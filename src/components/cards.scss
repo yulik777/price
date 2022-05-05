@@ -1,43 +1,85 @@
 
 $textColor: rgb(32, 34, 34); //препроцессор
-$textsize: 30px;
+$textsize: 50px;
 
 .card-name{
-    font-weight: bold;
-    background-color: aqua;
+    font-weight: bold;    
     height: 40px;
 }
-.card-price{
-    background-color: aquamarine;
-    height: 40px;
+.card-price {
    font-size: $textsize;
    font-weight: 500;
 }
-.card-speed{
-background-color: rgb(158, 158, 158);
+.card-speed {
 height: 40px;
-
 }
+
 .card-text{
-    background-color: azure;
     height: 40px;
 }
 
+.currency {
+    height: 10px;
+    display: flex;
+
+}
+.card-totalprice {
+    height: 150px;
+}
+
 .selected{
-    border: 5px solid blanchedalmond;
+    border: 5px solid rgb(223, 138, 236);
     font-weight: bolder;
 }
 
 .card{
     display: flex;
     flex-direction: column;
-    margin: 40px;
-    width: 200px;
-    
-}
-.App{
-    display:flexbox;
- 
+    margin: 5px;
+    width: 250px;
+    div {
+        border: solid 1px #fff;
+        padding: 16px;}
 }
 
+
+
+    .App {
+        
+            &:first-of-type {
+                background-color: #2cc1d5;
+                div:first-of-type {
+                  background-color: #229cab;
+                }
+              }
+            
+              &:nth-of-type(2) {
+                background-color: #24ae8d;
+                div:first-of-type {
+                  background-color: #1f8972;
+                }
+              }
+            
+              &:nth-of-type(3) {
+                background-color: #f46a5f;
+                div:first-of-type {
+                  background-color: #c2554e;
+                }
+              }
+            
+              &:last-of-type {
+                background-color: #333a44;
+                div:first-of-type {
+                  background-color: #282e37;
+                }
+              }
+            }
+
+            
+
+            
+            
+  
+  
+  
 
