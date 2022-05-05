@@ -1,10 +1,11 @@
 
-$textColor: rgb(32, 34, 34); //препроцессор
+$textColor: rgb(239, 247, 247); //препроцессор
 $textsize: 50px;
 
 .card-name{
     font-weight: bold;    
     height: 40px;
+    color: #fff;
 }
 .card-price {
    font-size: $textsize;
@@ -12,19 +13,21 @@ $textsize: 50px;
 }
 .card-speed {
 height: 40px;
+background-color: rgb(234, 225, 225);
 }
 
 .card-text{
     height: 40px;
+    background-color: rgb(245, 239, 239);  
 }
 
 .currency {
     height: 10px;
     display: flex;
-
 }
 .card-totalprice {
     height: 150px;
+    color: $textColor;
 }
 
 .selected{
@@ -38,42 +41,42 @@ height: 40px;
     margin: 5px;
     width: 250px;
     div {
-        border: solid 1px #fff;
+        border: solid 0.5px #fff;
         padding: 16px;}
 }
 
-
-
     .App {
         
-            &:first-of-type {
-                background-color: #2cc1d5;
-                div:first-of-type {
-                  background-color: #229cab;
+            &:first-child {
+              .card-name{
+                background-color: #2cc1d5;}
+               .card-totalprice {
+                  background-color: #3799a6;
                 }
-              }
-            
-              &:nth-of-type(2) {
-                background-color: #24ae8d;
-                div:first-of-type {
-                  background-color: #1f8972;
-                }
-              }
-            
-              &:nth-of-type(3) {
-                background-color: #f46a5f;
-                div:first-of-type {
-                  background-color: #c2554e;
-                }
-              }
-            
-              &:last-of-type {
-                background-color: #333a44;
-                div:first-of-type {
-                  background-color: #282e37;
-                }
-              }
             }
+            
+              &:nth-child(2) {
+              .card-name{
+                background-color: #26ba89;}
+               .card-totalprice {
+                  background-color: #37a660;
+                }}
+              
+            
+                &:nth-child(3) {
+                  .card-name{
+                    background-color: #d66b53;}
+                   .card-totalprice {
+                      background-color: #ee534b;
+                    }}
+            
+              &:last-child {
+                .card-name{
+                  background-color: #494544;}
+                 .card-totalprice {
+                    background-color: #7b7979;
+                  }}
+              }
 
             
 
