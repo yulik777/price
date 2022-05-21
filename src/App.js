@@ -35,8 +35,7 @@ const cards = [
 function App (){ 
   
   return (
-    <div>
-    <div className={App}>
+    
   <div className='container'>
     {
       cards.map((card) =>
@@ -45,9 +44,6 @@ function App (){
       )
   }
   </div>
-  </div>
-</div>
-  
   );
 }
 
